@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Lalwani</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">        
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountain_back">
+        <img src="mountains_front.png" id="mountain_front">
+        <h2 id="text">Krish Lalwani</h2>
+        <a href="#sec" id="btn">Explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>Web Development</h2>
+        <p>Hi, I am Krish Lalwani. I am a 16 year old passionate web developer from India. I am Computer Science student who loves to program thing. I have maintained more than 10 repositories on Github since 2016.<br>You can access my free html website templates from Arts tab and also you can contact me or visit my Socials to catch me up.<br>And yeah do follow me on Github :-)<br><br><br> this site is under development so click the below button to contribute to this webpage.</p>
+    </div>
+    
+    
+    <div class="loader">
+        <h2>Krish Lalwani...</h2>
+    </div> 
+    <div class="end">
+        <a href="https://github.com/krishlalwani0">GitHub</a>
+        <br><br><br>
+        <h4>Made with love by Krish Lalwani.</h4>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountain_back = document.getElementById('mountain_back');
+        let mountain_front = document.getElementById('mountain_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+       
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountain_back.style.top = value * 0.5 + 'px';
+            mountain_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginRight = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+        
+    </script>
+    <script>
+        
+         var loader = document.getElementById("preloader");
+         
+         window.addEventListener('load', function(){
+            loader.style.display = "none";        
+        })
+        
+    </script>
+</body>
+</html>
