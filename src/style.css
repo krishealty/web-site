@@ -1642,7 +1642,7 @@ footer div {
 }
 .project-links{
   margin-top: 20px;
-  height: 100vh;
+  height: 130vh;
 	display: grid;
 	place-items: center;
 }
